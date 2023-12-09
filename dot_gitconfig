@@ -1,0 +1,62 @@
+[user]
+	email = thedrewbisset@gmail.com
+	name = thedrewbisset
+[core]
+  excludesfile = ~/.git-excludes-file
+
+[push]
+  default = simple
+
+# All aliases are transformed by .bash/git-completion-with-alias-support.bash
+# to provide variants that can be called as `g<alias>` instead of `git <alias>`.
+# This allows aliases to use git-completion while still being tersely named.
+[alias]
+  sh = show
+  clo = clone
+  st = status
+  b = branch
+  bd = branch -d
+  bD = branch -D
+  ba = branch --all
+  bm = branch -m
+  co = checkout
+  cop = checkout --patch
+  d = diff
+  ds = diff --staged
+  df = diff --dirstat=files
+  a = add
+  ap = add --patch
+  mv = mv
+  rm = rm
+  cln = clean
+  clni = clean --interactive
+  sts = stash save
+  stsp = stash save --patch
+  stl = stash list
+  stsh = stash show --cc
+  stp = stash pop
+  sta = stash apply
+  std = stash drop
+  c = commit
+  cv = commit --verbose
+  cm = commit --message
+  ca = commit --amend
+  cav = commit --amend --verbose
+  cp = cherry-pick
+  cpi = cherry-pick --interactive
+  cpc = cherry-pick --continue
+  cps = cherry-pick --skip
+  cpa = cherry-pick --abort
+  m = merge
+  mnf = merge --no-ff
+  p = push
+  psu = push --set-upstream
+  pfl = push --force-with-lease
+  pl = pull
+  plr = pull --rebase
+  r = rebase
+  ri = rebase --interactive
+  rc = rebase --continue
+  rs = rebase --skip
+  ra = rebase --abort
+  lo = log --graph --pretty="%Cgreen%h%Cblue%d%Cred%\\ aN%Creset%\\ s"
